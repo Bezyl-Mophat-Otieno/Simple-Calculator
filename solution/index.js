@@ -33,7 +33,7 @@ resultsBtn.addEventListener('click', (e) => {
     
     let results = eval(inputWindow.value)
 
-      inputWindow.value = results   ;
+      inputWindow.value = results ;
 })
 
 // This is the clear button
@@ -46,9 +46,8 @@ clearBtn.addEventListener('click', (e) => {
 // This is the delete button
 let deleteBtn = document.querySelector('#del')
 deleteBtn.addEventListener('click', (e) => {
-    console.log(e.target.innerText)
-    // inputWindow.value = inputWindow.value.slice(0, -1)
-
+    // console.log(inputWindow.value.slice(0, -1))
+    inputWindow.value = inputWindow.value.slice(0, -1)
 })
 
 
